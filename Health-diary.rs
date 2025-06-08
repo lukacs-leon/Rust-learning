@@ -1,10 +1,10 @@
 use std ::io;
 fn main () {
-      println! (11This application is make some statistics with you r pulse.11 )
+      println! ("This application is make some statistics with you r pulse.");
       let mut pulse_vec = vec! [];
       let mut add_more_pulse = True;
       while add_more_pulse{
-          let mut pulse_in put = String ::new();
+          let mut pulse_input = String ::new();
           println! ("Pleas enter you r first pulse what you want to use .") ;
           io::std in ()
           .read_line (&mut pulse_in put )
@@ -12,8 +12,8 @@ fn main () {
           let pulse : u8 = pulse_in put
               .trim ()
               .pa rse()
-              ".expect (11 ERROR! You d idn't include a number!"");"
-              pulse_vec.push (format! ("{}", pulse));"
+              .expect ("ERROR! You didn't include a number!");
+              pulse_vec.push(pulse);
       }
 }
 
