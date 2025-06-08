@@ -9,14 +9,16 @@ fn main() {
     let mut actual_num = 0;
     let mut downs = 0;
     let mut ups = 0;
-    if START_NUM % 1 == 1 {
-        actual_num = prev_num * 3 +1;
-        ups += 1;
-        println!("{} \u{2191}", actual_num);
-    } else {
-        actual_num = prev_num / 2;
-        downs += 1;
-        println!("{} \u{2193}", actual_num);
+    while actual_num != 1{
+        if START_NUM % 2 == 1 {
+            actual_num = prev_num * 3 +1;
+            ups += 1;
+            println!("{} \u{2191}", actual_num);
+        } else {
+            actual_num = prev_num / 2;
+            downs += 1;
+            println!("{} \u{2193}", actual_num);
+        }
+        prev_num = actual_num;
     }
-    prev_num = actual_num;
 }
